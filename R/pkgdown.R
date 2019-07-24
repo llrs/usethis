@@ -33,7 +33,7 @@ use_pkgdown <- function(config_file = "_pkgdown.yml", destdir = "docs") {
 #' @rdname use_pkgdown
 use_pkgdown_travis <- function() {
   check_installed("pkgdown")
-
+  check_installed("travis")
   if (!uses_pkgdown()) {
     ui_stop(c(
       "Package doesn't use pkgdown.",
